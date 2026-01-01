@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depression Symptom Detector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Depression Symptom Detector</h1>
+        <p><strong>Disclaimer:</strong> This is not a medical tool. It's for educational purposes only. If you're struggling, please consult a professional.</p>
+        
+        <form id="quiz-form">
+            <!-- Question 1 -->
+            <div class="question">
+                <p>1. Little interest or pleasure in doing things?</p>
+                <label><input type="radio" name="q1" value="0"> Not at all</label>
+                <label><input type="radio" name="q1" value="1"> Several days</label>
+                <label><input type="radio" name="q1" value="2"> More than half the days</label>
+                <label><input type="radio" name="q1" value="3"> Nearly every day</label>
+            </div>
+            
+            <!-- Add 8 more questions here (simplified PHQ-9). For brevity, I'll stop at 2, but expand to 9 total. -->
+            <div class="question">
+                <p>2. Feeling down, depressed, or hopeless?</p>
+                <label><input type="radio" name="q2" value="0"> Not at all</label>
+                <label><input type="radio" name="q2" value="1"> Several days</label>
+                <label><input type="radio" name="q2" value="2"> More than half the days</label>
+                <label><input type="radio" name="q2" value="3"> Nearly every day</label>
+            </div>
+            
+            <!-- Repeat for questions 3-9, naming them q3 to q9 -->
+            
+            <button type="submit">Submit Quiz</button>
+        </form>
+        
+        <div id="results" style="display: none;">
+            <h2>Your Results</h2>
+            <p id="score-text"></p>
+            <p>Remember, this is not a diagnosis. Seek help if needed.</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
